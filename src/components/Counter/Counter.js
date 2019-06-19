@@ -5,7 +5,7 @@ class Counter extends React.Component {
         super(props);
 
         this.state = {
-            count: 0
+            count: 9007199254740990
         }
 
         this.clickHandler = this.clickHandler.bind(this);
@@ -20,10 +20,6 @@ class Counter extends React.Component {
     }
 
     render() {
-        if(this.state.count == 10) {
-            throw new Error('this count is to high for me :3')
-        }
-
         return (
             <h1 onClick={this.clickHandler}>{this.state.count}</h1>
         );
