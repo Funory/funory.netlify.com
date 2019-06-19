@@ -1,19 +1,41 @@
 {
-  "name": "funory",
-  "description": "my personl website on netlify",
-  "author": "Funory",
+  "name": "funory.netlify.com",
   "version": "0.1.0",
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+  "description": "My personal website on netlify.com",
+  "keywords": [
+      "netlify",
+      "website",
+      "personal website"
+  ],
+  "homepage": "https://github.com/Funory/funory.netlify.com",
+  "bugs": {
+      "url": "https://github.com/Funory/funory.netlify.com/issues"
+  },
+  "license": "MIT",
+  "author": {
+      "name": "Funory",
+      "url": "https://github.com/Funory"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Funory/funory.netlify.com.git"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,10 +51,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/node": "^12.0.8",
-    "@types/react": "^16.8.20"
   },
   "proxy": "http://127.0.0.1:8888"
 }
