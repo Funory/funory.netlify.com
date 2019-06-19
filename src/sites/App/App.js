@@ -21,9 +21,12 @@ class App extends React.Component {
     render() {
         const { resp } = this.state;
 
+        if(resp) throw new Error('error');
+
         return (
             <div className="App">
-                Response: {resp ? resp : "Loading.."}
+                <h1>This website is currently in development!</h1>
+                <p>{React.version}</p>
             </div>
         );
     }

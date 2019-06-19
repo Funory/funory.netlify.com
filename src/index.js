@@ -5,17 +5,21 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 
 // Sites
-import App from './App';
+import App from './sites/App/App';
+
+// Error Sites
+import NotFound from './sites/Errors/NotFound/NotFound';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 ReactDOM.render((
-    <Router>
-        <Switch>
-            <Route path="/" exact component={App} />
-            <Route path="*" exact render={() => (
-                <h1>Error 404 - Not Found</h1>
-            )} />
-        </Switch>
-    </Router>
+    <ErrorBoundary>
+        <Router>
+            <Switch>
+                <Route path="/" exact component={App} />
+                <Route path="*" exact component={NotFound} />
+            </Switch>
+        </Router>
+    </ErrorBoundary>
 ), document.getElementById('root'));
 
 serviceWorker.unregister();

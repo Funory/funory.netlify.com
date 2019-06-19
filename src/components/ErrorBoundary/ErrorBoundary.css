@@ -1,0 +1,26 @@
+.ErrorBoundary {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #111111;
+    color: #eeeeee;
+}
+
+.ErrorBoundary .text-red {
+    color: rgb(172, 42, 42);
+}
+
+.ErrorBoundary .button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .3rem .7rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    outline: none;
+    margin-left: .5rem;
+}
