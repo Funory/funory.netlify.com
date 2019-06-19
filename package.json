@@ -1,5 +1,7 @@
 {
   "name": "funory",
+  "description": "my personl website on netlify",
+  "author": "Funory",
   "version": "0.1.0",
   "dependencies": {
     "react": "^16.8.6",
