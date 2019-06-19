@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e89b3aab-232b-4a1c-b91e-05dab23608ae/deploy-status)](https://app.netlify.com/sites/funory/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
