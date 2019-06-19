@@ -22,8 +22,7 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <h1>{this.state.count}</h1>
-                <button onClick={this.clickHandler}>Click me</button>
+                {this.state.count} <button onClick={this.clickHandler}>Click me</button>
             </div>
         );
     }

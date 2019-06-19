@@ -30,7 +30,6 @@ class App extends React.Component {
                 <h1>This website is currently in development!</h1>
                 <p>{resp}</p>
                 <ErrorBoundary><Counter /></ErrorBoundary>
-                <ErrorBoundary><Counter /></ErrorBoundary>
             </div>
         );
     }
