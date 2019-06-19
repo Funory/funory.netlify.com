@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
 
+// Components
+import Counter from '../../components/Counter/Counter';
+import ErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
+
 class App extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             resp: null
@@ -21,12 +25,12 @@ class App extends React.Component {
     render() {
         const { resp } = this.state;
 
-        if(resp) throw new Error('error');
-
         return (
             <div className="App">
                 <h1>This website is currently in development!</h1>
-                <p>{React.version}</p>
+                <p>{resp}</p>
+                <ErrorBoundary><Counter /></ErrorBoundary>
+                <ErrorBoundary><Counter /></ErrorBoundary>
             </div>
         );
     }
