@@ -5,7 +5,7 @@ class Counter extends React.Component {
         super(props);
 
         this.state = {
-            count: 9007199254740990
+            count: 0
         }
 
         this.clickHandler = this.clickHandler.bind(this);
@@ -21,7 +21,8 @@ class Counter extends React.Component {
 
     render() {
         return (
-            <h1 onClick={this.clickHandler}>{this.state.count}</h1>
+            <h1>{this.state.count}</h1>
+            <button onClick={this.clickHandler}>Click me</button>
         );
     }
 }
